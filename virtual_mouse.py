@@ -94,7 +94,7 @@ while True:
                 cv2.putText(frame, "TAB CLOSED", (50, 150),
                             cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 3)
 
-    cv2.imshow("AI Virtual Mouse", frame)
+    cv2.imshow(" Virtual Mouse", frame)
 
     # Press ESC to quit
     if cv2.waitKey(1) & 0xFF == 27:
