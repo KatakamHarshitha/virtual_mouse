@@ -15,7 +15,7 @@ mp_draw = mp.solutions.drawing_utils
 
 # Get screen size
 screen_width, screen_height = pyautogui.size()
-
+ 
 # Open webcam
 cap = cv2.VideoCapture(0)
 cap.set(3, 1280)
@@ -25,13 +25,13 @@ cap.set(4, 720)
 last_click_time = 0
 last_tab_time = 0
 last_close_time = 0
-cooldown = 0.6  # seconds
+cooldown = 0.6  # seconds       
 
 while True:
     success, frame = cap.read()
     if not success:
         break
-
+                                            
     frame = cv2.flip(frame, 1)
     h, w, _ = frame.shape
     rgb_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
